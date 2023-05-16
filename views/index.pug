@@ -3,3 +3,11 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+
+  ul 
+    each msg in messages 
+      li 
+        p #{msg.text}
+        p #{msg.user}
+        p Added on #{msg.added}
+  a(href='/new') Go to new page to fill Form
