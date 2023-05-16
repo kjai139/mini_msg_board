@@ -6,3 +6,13 @@ body {
 a {
   color: #00B7FF;
 }
+
+
+.authorForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.formContainer {
+  max-width: 300px;
+}

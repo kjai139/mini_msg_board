@@ -1,6 +1,11 @@
-form(method="post", action='/new')
-label(for='name') Author's Name: 
-input(type='text', name='name')
-label(for='messageTxt') Message: 
-textarea(name='messageTxt')
-button(type='submit')Submit
+head 
+  link(rel="stylesheet", href="/stylesheets/style.css")
+
+div.formContainer
+    form(method="POST", action="/new" class='authorForm')
+        label(for="name") Author's Name:
+        input(type="text", name="name")
+        label(for="messageTxt") Message:
+        textarea(name="messageTxt")
+        button(type="submit") Submit
+        // Indents matter in pug
